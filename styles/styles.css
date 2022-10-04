@@ -1,0 +1,228 @@
+* {
+  font-family: 'Source Code Pro', monospace;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.toggle-settings {
+  font-size: 1.5em;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 10;
+}
+
+.form-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.settings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  position: fixed;
+  top: 55px;
+  padding: 20px;
+  background-color: white;
+  border: 2px solid black;
+  z-index: 10;
+}
+
+.settings #floors {
+  width: 40px;
+}
+
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+
+.elevator {
+  margin: 0 auto;
+  min-width: 275px;
+  min-height: 400px;
+  max-width: 500px;
+  max-height: 900px;
+  border: 2px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: silver;
+  margin-top: 60px;
+}
+
+@media only screen and (min-width: 600px) {
+  .elevator {
+    height: 95vh;
+    width: 60vh;
+    margin-top: 0;
+  }
+}
+
+.window {
+  border: 2px solid black;
+  margin: 0 auto;
+  width: 95%;
+  min-height: 200px;
+  background-image: url("../assets/oakland.jpg");
+  background-size: cover;
+  background-position: 0 100%;
+  -webkit-transition: background-position linear;
+  transition: background-position linear;
+}
+
+@media only screen and (min-width: 600px) {
+  .window {
+    height: 30vh;
+  }
+}
+
+h1.floor-num {
+  color: white;
+  text-align: center;
+  font-size: 3em;
+  margin: 0 auto;
+  background-color: black;
+  width: 80px;
+}
+
+h2.floor-num {
+  color: white;
+  font-size: 2em;
+  display: inline-block;
+  width: 25px;
+}
+
+.control-box {
+  width: 150px;
+  min-height: 200px;
+  padding: 10px;
+  border: 2px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.display-panel {
+  width: 100%;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.floor-btn, .direction-light {
+  width: 30px;
+  height: 30px;
+}
+
+.floor-btn-panel {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+  gap: 5px;
+  margin-left: 10px;
+}
+
+.floor-btn {
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.floor-selected {
+  background-color: yellow;
+}
+
+.direction-light i {
+  color: white;
+  font-size: 1.5em;
+  display: block;
+  text-align: center;
+  opacity: 0;
+}
+
+#direction-up {
+  background-color: #002800;
+}
+
+#direction-down {
+  margin-top: 5px;
+  background-color: #280000;
+}
+
+.up-highlight {
+  background-color: #00b800 !important;
+}
+
+.up-highlight i {
+  opacity: 1;
+}
+
+.down-highlight {
+  background-color: red !important;
+}
+
+.down-highlight i {
+  opacity: 1;
+}
+
+.hide {
+  display: none;
+}
+/*# sourceMappingURL=styles.css.map */

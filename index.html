@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <title>Elevator</title>
+  <script src="index.js" defer></script>
+</head>
+
+<body>
+  <button class="toggle-settings"><i class="bi bi-gear-fill"></i></button>
+  <form class="settings hide">
+    <div class="form-control">
+      <label for="floors"># of Floors:</label>
+      <input type="number" id="floors" min="2" max="10" value="4">
+    </div>
+    <div class="form-control">
+      <label for="city">City:</label>
+      <select id="city">
+        <option value="Oakland">Oakland</option>
+        <option value="New York City">New York City</option>
+        <option value="Chicago">Chicago</option>
+        <option value="Seattle">Seattle</option>
+        <option value="Los Angeles">Los Angeles</option>
+      </select>
+    </div>
+    <button>Update</button>
+  </form>
+  <div class="backdrop hide"></div>
+  <main class="elevator">
+    <h1 class="floor-num">1</h1>
+    <div class="window"></div>
+    <div class="control-box">
+      <div class="display-panel">
+        <h2 class="floor-num">1</h2>
+        <div class="direction-panel">
+          <div class="direction-light" id="direction-up"><i class="bi bi-caret-up-fill"></i></div>
+          <div class="direction-light" id="direction-down"><i class="bi bi-caret-down-fill"></i></div>
+        </div>
+      </div>
+      <div class="floor-btn-panel"></div>
+    </div>
+  </main>
+</body>
+
+</html>
